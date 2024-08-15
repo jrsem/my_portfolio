@@ -1,8 +1,10 @@
 import React from 'react'
-
+import {CarouselDemo} from '@/components/work'
 const Works = () => {
   return (
-    <div>Works</div>
+    <div className='max-container padding-container flex justify-center items-center'>
+     <CarouselDemo/>
+    </div>
   )
 }
 

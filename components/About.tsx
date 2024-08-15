@@ -24,7 +24,7 @@ const About = () => {
                     icon='/download.svg'
                     />
                 <div className="flex justify-center gap-6 px-2 sm:px-14 lg:px-0">
-                        <div className="rounded-full bg-white-3 p-3 cursor-pointer hover:bg-white-1">
+                        <div className="rounded-full bg-black-2 p-3 cursor-pointer hover:bg-white-1">
                             <Image
                             src='/github.svg'
                             width={15}
@@ -33,7 +33,7 @@ const About = () => {
                             className="text-center w-[24px] h-[24px]"
                             />
                         </div>
-                        <div className="rounded-full bg-white-3 p-3 cursor-pointer hover:bg-white-1">
+                        <div className="rounded-full bg-black-2 p-3 cursor-pointer hover:bg-white-1">
                             <Image
                                 src='/linkedin.svg'
                                 width={15}
@@ -42,7 +42,7 @@ const About = () => {
                             className="text-center w-[24px] h-[24px]"
                                 />
                         </div>
-                        <div className="rounded-full bg-white-3 p-3 cursor-pointer hover:bg-white-1">
+                        <div className="rounded-full bg-black-2  p-3 cursor-pointer hover:bg-white-1">
                     <Image
                         src='/twitter.svg'
                         width={15}
