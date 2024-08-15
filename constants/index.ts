@@ -3,5 +3,6 @@ export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'Home' },
     { href: '/services', key: 'services', label: 'Services' },
     { href: '/resume', key: 'resume ', label: 'Resume ' },
-    { href: '/contact', key: 'contact_us', label: 'Contact Us' },
+    { href: '/works', key: 'work ', label: 'Works ' },
+    { href: '/contact', key: 'contact_me', label: 'Contact Me' },
   ];
