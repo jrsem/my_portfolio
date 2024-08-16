@@ -4,7 +4,7 @@ export default function Home() {
   // TRADUCTION
 const t=useTranslations('HomePage');
   return (
-  <div className="max-container padding-container flex justify-center items-center">
+  <div className="max-container padding-container flex justify-center items-center mt-24">
      <About/>
   </div>
   );

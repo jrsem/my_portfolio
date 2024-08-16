@@ -18,8 +18,8 @@ const Service = ({ title,description,number}:{title:string,description:string,nu
                 <ArrowDownRight className='text-secondColor'/>
         </div>
         </div>
-        <h1 className="hover:text-secondColor font-bold text-2xl">{title}</h1>
-        <p>{description}</p>
+        <h1 className="hover:text-secondColor font-bold text-14 text-white-1">{title}</h1>
+        <p className="text-12">{description}</p>
       </div>
     </div>
   )

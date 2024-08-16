@@ -16,14 +16,13 @@ export function CarouselDemo() {
       <CarouselContent className="mb-8">
         {carousel_data.map(({description,image,technologies,title,url_github,url_site,number,index}) => (
           <CarouselItem key={index}>
-            <div className="grid grid-cols-2 text-white-1 gap-8 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 text-white-1 gap-8 items-center">
                 <div>
-                    <div className="flex flex-col gap-4 border-b border-white-3 pb-4">
+                    <div className="flex flex-col gap-1 border-b border-white-3 pb-1">
                         <h1 className="text-4xl text-bold">{number}</h1>
-                        <h1 className="text-xl">{title}</h1>
-                        <p className="text-white-3 text-justify">{description} 
-                        </p>
-                        <p className="text-secondColor">{technologies}</p>
+                        <h1 className="text-16">{title}</h1>
+                        <p className="text-white-3 text-justify text-12">{description}</p>
+                        <p className="text-secondColor text-14">{technologies}</p>
                     </div>
                     <div className="flex gap-4 mt-3">
                         {/* <ArrowUpRight className='text-secondColor cursor-pointer'/> */}
@@ -50,7 +49,9 @@ export function CarouselDemo() {
                 </div>
                 
                 <div className="p-1">
-                    <Image src={image} width={500} height={500} alt='efes'/>
+                    <Image src={image} width={400} height={400} 
+                    alt='efes'
+                    />
                 </div>
             </div>
             

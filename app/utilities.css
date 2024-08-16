@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* LAUYOUT */
+  .max-container {
+    @apply mx-auto max-w-[1000px];
+  }
+  /* ===== TYPOGRAPHY */
+  .text-10 {
+    @apply text-[10px] leading-[14px];
+  }
+
+  .text-12 {
+    @apply text-[12px] leading-[16px];
+  }
+
+  .text-14 {
+    @apply text-[14px] leading-[20px];
+  }
+
+  .text-16 {
+    @apply text-[16px] leading-[24px];
+  }
+
+  .text-18 {
+    @apply text-[18px] leading-[22px];
+  }
+
+  .text-20 {
+    @apply text-[20px] leading-[24px];
+  }
+
+  .text-24 {
+    @apply text-[24px] leading-[30px];
+  }
+
+  .text-26 {
+    @apply text-[26px] leading-[32px];
+  }
+
+  .text-30 {
+    @apply text-[30px] leading-[38px];
+  }
+
+  .text-36 {
+    @apply text-[36px] leading-[44px];
+  }
+/* bold */
+  .text-36-bold {
+    @apply text-[36px] leading-[40px] font-bold;
+  }
+
+  .text-24-bold {
+    @apply text-[24px] leading-[28px] font-bold;
+  }
+
+  .text-32-bold {
+    @apply text-[32px] leading-[36px] font-bold;
+  }
+
+  .text-18-bold {
+    @apply text-[18px] leading-[24px] font-bold;
+  }
+/* semibold */
+  .text-16-semibold {
+    @apply text-[16px] leading-[20px] font-semibold;
+  }
+
+  .text-16-regular {
+    @apply text-[16px] leading-[20px] font-normal;
+  }
+
+  .text-14-medium {
+    @apply text-[14px] leading-[18px] font-medium;
+  }
+
+  .text-14-regular {
+    @apply text-[14px] leading-[18px] font-normal;
+  }
+
+  .text-12-regular {
+    @apply text-[12px] leading-[16px] font-normal;
+  }
+
+  .text-12-semibold {
+    @apply text-[12px] leading-[16px] font-semibold;
+  }
+  /* FLEXBOX */
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .flexStart {
+    @apply flex items-center justify-start;
+  }
+
+  .flexEnd {
+    @apply flex items-center justify-end;
+  }
+/* ======= */
+.flex{ /*container*/
+    @apply flex
+}
+.flex-1-2{/*container-item occupy 50% of the container(we got 2 items inside the container)*/
+    @apply basis-1/2
+}
+
+.flex-1-4{/*container-item occupy 25% of the container(we got 4 items inside the container)*/
+    @apply basis-1/4 
+}
+.flex-2-4{/*container-item occupy 50% of the container(we got 4 items inside the container)*/
+    @apply basis-2/4
+}
+/* ========== */
+/* GRID */
+.grid-x-1-1{
+    @apply grid grid-cols-2
+}
+/* ============== */
+.grid-x-1-2{/*container (here we have 3 cells)*/
+    @apply grid grid-cols-3
+}
+.span-x-1{/*container-item (this item occupy 1 cells)*/
+    @apply col-span-1
+}
+.span-x-2{/*container-item (this item occupy 2 cells)*/
+    @apply col-span-2
+}
+/* ============== */
+.grid-y-1-2{/*container (here we have 3 cells)*/
+    @apply grid grid-rows-3
+}
+.span-y-1{/*container-item (this item occupy 1 cells)*/
+    @apply col-span-1
+}
+.span-y-2{/*container-item (this item occupy 2 cells)*/
+    @apply col-span-2
+}
+/* ============== */
+  /* ====== BUTON VARIANT*/
+  .btn_white {
+    @apply border-white bg-white px-8 py-3 text-green-50;
+  }
+  .btn_white_text {
+    @apply text-gray-90 border-white bg-white px-8 py-3;
+  }
+  .btn_green {
+    @apply border-green-50 bg-green-50 px-8 py-5 text-white;
+  }
+  .btn_dark_green {
+    @apply bg-green-500 px-8 py-4 text-white transition-all hover:bg-black;
+  }
+  .btn_dark_green_outline {
+    @apply border-gray-20 bg-green-90 px-8 py-5 text-white;
+  }
+}
+
+
+/* COLORS */
+colors: {
+    white: {
+      1: "#FFFFFF",
+      2: "rgba(255, 255, 255, 0.72)",
+      3: "rgba(255, 255, 255, 0.4)",
+      4: "rgba(255, 255, 255, 0.64)",
+      5: "rgba(255, 255, 255, 0.80)",
+    },
+    black: {
+      1: "#15171C",
+      2: "#222429",
+      3: "#101114",
+      4: "#252525",
+      5: "#2E3036",
+      6: "#24272C",
+    }
+}

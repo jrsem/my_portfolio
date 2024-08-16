@@ -4,18 +4,25 @@ export const NAV_LINKS = [
     { href: '/services', key: 'services', label: 'Services' },
     { href: '/resume', key: 'resume ', label: 'Resume ' },
     { href: '/works', key: 'work ', label: 'Works ' },
-    { href: '/contact', key: 'contact_me', label: 'Contact Me' },
+    { href: '/contact', key: 'contact_me', label: 'Contact me' },
   ];
 
   export const carousel_data=[
     {
       index:0,
       number:'01',
-      title:'FrontEnd',
+      title:'FrontEnd project',
       description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt porro suscipit recusandae tenetur obcaecati nobis facilis alias quisquam ',
-      technologies:'Nextjs / tailwindcss / shadcn',
+      technologies:'Nextjs / tailwindcss / shadcn / zustand / zod',
       image:'/works/efes.PNG',
       url_site:'https://efes-demo.ayiti.digital/fr',
       url_github:'https://github.com/jrsem'
     }
+  ]
+
+  export const services=[
+    {id:0, label:'Web design',value:'wd'},
+    {id:1, label:'Embaded system',value:'es'},
+    {id:2, label:'Mobile App',value:'mp'},
+    {id:3, label:'Web development',value:'wde'}
   ]

@@ -11,8 +11,9 @@ const About = () => {
             <p className="text-white-2">Software developer | Full stack</p>
             <h1 className="text-4xl">Hello I&apos;m</h1>
             <h1 className="text-secondColor text-4xl mb-4">Junior Semerzier</h1>
-            <p className="mb-6 text-justify">I excel at creating elegant digital experiences 
-                and i am proficient in various programming languages and technologies. 
+            <p className="mb-6 text-justify text-12">I excel at creating elegant digital experiences 
+                and i am proficient in various programming languages and technologies languages and technologies
+                and i am proficient in various programming languages and technologies languages and technologies. 
 
             </p>
         
