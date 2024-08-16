@@ -1,7 +1,7 @@
 import * as React from "react"
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowUpRight,GitGraph } from 'lucide-react';
+import { ArrowUpRight,Github } from 'lucide-react';
 import {
   Carousel,
   CarouselContent,
@@ -19,7 +19,7 @@ export function CarouselDemo() {
             <div className="grid grid-cols-1 md:grid-cols-2 text-white-1 gap-8 items-center">
                 <div>
                     <div className="flex flex-col gap-1 border-b border-white-3 pb-1">
-                        <h1 className="text-4xl text-bold">{number}</h1>
+                        <h1 className="text-4 text-bold">{number}</h1>
                         <h1 className="text-16">{title}</h1>
                         <p className="text-white-3 text-justify text-12">{description}</p>
                         <p className="text-secondColor text-14">{technologies}</p>
@@ -27,22 +27,10 @@ export function CarouselDemo() {
                     <div className="flex gap-4 mt-3">
                         {/* <ArrowUpRight className='text-secondColor cursor-pointer'/> */}
                         <Link href={url_site} className="rounded-full bg-white-1 p-2 cursor-pointer hover:bg-white-3">
-                        <Image
-                            src='/google.svg'
-                            width={10}
-                            height={10}
-                            alt='github'
-                            className="text-center w-[15px] h-[15px]"
-                            />
+                          <ArrowUpRight className='text-secondColor'/>
                         </Link>
                         <Link href={url_github} className="rounded-full bg-white-1 p-2 cursor-pointer hover:bg-white-3">
-                        <Image
-                            src='/github-light.svg'
-                            width={10}
-                            height={10}
-                            alt='github'
-                            className="text-center w-[15px] h-[15px]"
-                            />
+                        <Github className='text-secondColor'/>
                         </Link>
                         {/* <GitGraph className='text-secondColor cursor-pointer'/> */}
                     </div>

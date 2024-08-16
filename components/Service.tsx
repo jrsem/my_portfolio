@@ -1,24 +1,20 @@
 import React from 'react'
 import Image from 'next/image'
 import { ArrowDownRight } from 'lucide-react';
-const Service = ({ title,description,number}:{title:string,description:string,number:string}) => {
+import Link from 'next/link';
+const Service = ({ title,description,number,url}:{url:string,title:string,description:string,number:string}) => {
   return (
     <div className="border-b border-b-white-2 pb-2">
       <div>
         <div className="flex justify-between">
-          <p className="hover:text-secondColor text-4xl text-white-1 font-bold">{number}</p>
-          <div className="rounded-full bg-white-1 p-2 cursor-pointer hover:bg-white-3">
-            {/* <Image
-                src='/linkedin.svg'
-                width={10}
-                height={10}
-                alt='github'
-                className="text-center w-[24px] h-[24px]"
-                /> */}
-                <ArrowDownRight className='text-secondColor'/>
+          <p className="text-white-1 text-4xl font-bold">{number}</p>
+          <Link href={url} className="rounded-full bg-white-1 p-2 cursor-pointer">
+            <ArrowDownRight className='text-secondColor'/>
+          </Link>
+          
+          
         </div>
-        </div>
-        <h1 className="hover:text-secondColor font-bold text-14 text-white-1">{title}</h1>
+        <h1 className="text-secondColor font-bold text-14 ">{title}</h1>
         <p className="text-12">{description}</p>
       </div>
     </div>

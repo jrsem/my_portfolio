@@ -6,18 +6,22 @@ const Services = () => {
         <Service title="Web development" 
         description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, reprehenderit?'
         number="01"
+         url='/web-app'
         />
         <Service title="UI/UX design" 
         description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, reprehenderit?'
         number="02"
+        url='/ui-ux'
         />
         <Service title="Embaded system / IoT" 
         description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, reprehenderit?'
         number="03"
+         url='/iot'
         />
         <Service title="Mobile App" 
         description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, reprehenderit?'
         number="04"
+         url='/mobile-app'
         />
     </div>
   )

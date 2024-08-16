@@ -11,12 +11,12 @@ export const NAV_LINKS = [
     {
       index:0,
       number:'01',
-      title:'FrontEnd project',
-      description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt porro suscipit recusandae tenetur obcaecati nobis facilis alias quisquam ',
+      title:'Frontend project',
+      description:'The Electronic Entry and Exit Form (e-FES) is a system that facilitates the formalities of travelers with the migration, health and customs services of the Republic of Haiti.',
       technologies:'Nextjs / tailwindcss / shadcn / zustand / zod',
       image:'/works/efes.PNG',
       url_site:'https://efes-demo.ayiti.digital/fr',
-      url_github:'https://github.com/jrsem'
+      url_github:'https://github.com/jrsem',
     }
   ]
 
