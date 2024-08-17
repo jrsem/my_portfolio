@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className=" flex flex-col md:grid-x-1-5 gap-10 justify-center items-center">
         <div className="md:span-x-3 p-4 rounded-md bg-black-5">
-            <h1 className="text-30 text-secondColor mb-2">Let's work together</h1>
+            <h1 className="text-30 text-secondColor mb-2">Let&apos;s work together</h1>
             {/* <p className="text-white-2 text-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, accusamus?</p> */}
             <Form/>
         </div>

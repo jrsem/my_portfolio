@@ -11,7 +11,7 @@ const About = () => {
             <p className="text-white-2">Software developer | Full stack</p>
             <h1 className="text-4xl">Hello I&apos;m</h1>
             <h1 className="text-secondColor text-4xl mb-4">Junior Semerzier</h1>
-            <p className="mb-6 text-justify text-12">A passionate and experienced software developer with over 6 years of experience in the tech industry. He specializes in full-stack development, with a deep understanding of both front-end and back-end technologies.
+            <p className="mb-6 text-justify text-12">A passionate and experienced software developer with over 6 years of experience in the tech industry. I specialize in full-stack development, with a deep understanding of both front-end and back-end technologies.
 
             </p>
         

@@ -48,7 +48,7 @@ export function Resume() {
             </TabsContent>
             <TabsContent value="education" className="pt-10">
             <h1 className="text-16">Education</h1>
-                <p className="text-12 text-white-2">I'm a Bachelor’s degree in Computer Science and is always eager to learn new technologies and improve my craft.
+                <p className="text-12 text-white-2">I&apos;m a Bachelor&apos;s degree in Computer Science and is always eager to learn new technologies and improve my craft.
                 </p>
                 <div className="flex flex-col gap-4 pt-2">
                     <Education localization="Brazil" url="https://ufsc.br/" year="2019" description="Universidade Federal de Santa Catarina-UFSC" title="Bachelor’s degree in Computer Science"/>
@@ -101,7 +101,7 @@ export function Resume() {
             </TabsContent>
             <TabsContent value="about_me" className="pt-10">
                 <h1 className="text-16">About me</h1>
-                <p className="text-12 text-white-2">I'm known for my problem-solving abilities, attention to detail, and commitment to writing clean, maintainable code.
+                <p className="text-12 text-white-2">I&apos;m known for my problem-solving abilities, attention to detail, and commitment to writing clean, maintainable code.
                 </p>
                 <div className="flex justify-between mt-6 text-12">
                     <div className="flex flex-col gap-2">

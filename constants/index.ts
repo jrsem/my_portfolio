@@ -17,6 +17,16 @@ export const NAV_LINKS = [
       image:'/works/efes.PNG',
       url_site:'https://efes-demo.ayiti.digital/fr',
       url_github:'https://github.com/jrsem',
+    },
+    {
+      index:1,
+      number:'02',
+      title:'Full-stack project',
+      description:'The Electronic Entry and Exit Form (e-FES) is a system that facilitates the formalities of travelers with the migration, health and customs services of the Republic of Haiti.',
+      technologies:'Nextjs / tailwindcss / shadcn / zustand / zod / appwrite',
+      image:'/works/cmrl.PNG',
+      url_site:'https://cmrl-rendez-vous-jof1.vercel.app/',
+      url_github:'https://github.com/jrsem',
     }
   ]
 
