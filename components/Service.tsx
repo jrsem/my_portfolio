@@ -14,7 +14,7 @@ const Service = ({ title,description,number,url}:{url:string,title:string,descri
         <div className="flex justify-between">
           <p className="text-white-1 text-4xl font-bold">{number}</p>
           {/* <Link href={`/services/${url}`} className="rounded-full bg-white-1 p-2 cursor-pointer"> */}
-          <div  className="rounded-full bg-white-1 p-2 cursor-pointer">
+          <div  className="rounded-full bg-white-1 p-2">
             <ArrowDownRight className='text-secondColor'/>
             </div>
           {/* </Link> */}

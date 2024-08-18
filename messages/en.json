@@ -1,5 +1,83 @@
 {
+  "navbar":{
+    "home":"Home",
+    "resume":"Resume",
+    "contact":"Contact me",
+    "works":"Works",
+    "services":"Services",
+    "languages":"Languages"
+     },
     "HomePage": {
-      "title": "Hello world!"
-    }
+      "profession_1":"Software developer",
+      "profession_2":"Full stack",
+      "presentation_1":"Hello I'm",
+      "presentation_2":"Junior Semerzier",
+      "presentation_text":"A passionate and experienced software developer with over 6 years of experience in the tech industry. I specialize in full-stack development, with a deep understanding of both front-end and back-end technologies.",
+      "download_cv":"Download CV",
+      "years":"Years",
+      "projects":"Projects",
+      "technologes":"Technologes",
+      "experiences":"of experiences",
+      "completed":"completed",
+      "mastering":"mastering"
+    },
+    "ServicePage":{
+      "service_01_title":"Web development",
+      "service_02_title":"Embaded system / IoT",
+      "service_03_title":"Mobile App",
+      "service_01":"I’m proficient in both front-end and back-end development, allowing me to build comprehensive, end-to-end web solutions.",
+      "service_02":"I offer complete IoT development services, from connecting sensors and devices to the cloud, to developing applications that allow for real-time data monitoring, control, and analytics.",
+      "service_03":"I offer comprehensive mobile app development services, from initial concept and design to deployment and ongoing support."
+    },
+
+    "resumePage":{
+      "title":"Why hire me?",
+      "Why_hire_me":"I will bring a combination of problem-solving ability, and a strong commitment to delivering high-quality software.",
+      "expereinces_title":"My experiences have equipped me with a strong foundation in software development, from building scalable applications to working in collaborative, Agile environments.",
+      "experience":"Experiences",
+      "experiences_card_1":{
+       "years":"2020 - up to now",
+       "position":"Frontend developer",
+       "link":"link",
+       "instutition_name":"INSTITUT HAITIEN DE STATISTIQUE ET INFORMATIQUE - IHSI",
+       "country":"HAITI"
+    },
+    "experiences_card_2":{
+      "years":"2022 - 2023",
+      "position":"freelance web developer",
+      "link":"link",
+      "instutition_name":"ERNSYANS TECHNOLOGY SOLUTIONS Ltd",
+      "country":"CANADA"
+   },
+
+   "education":"Education",
+   "education_desc":"I'm a Bachelor&apos;s degree in Computer Science and is always eager to learn new technologies and improve my craft.",
+   "education_year":"2019" ,
+   "education_title":"Bachelor’s degree in Computer Science",
+   "education_localization":"Brazil",
+   "education_university":"Universidade Federal de Santa Catarina-UFSC",
+
+   "skills":"Skills",
+   "skills_desc":"I have a strong proficiency in programming languages such as JavaScript, Python, and C++, and is skilled in frameworks like React/nextjs, Django and the following technologies.",
+
+   "about_me":"About me",
+   "about_me_desc":"I'm known for my problem-solving abilities, attention to detail, and commitment to writing clean, maintainable code.",
+   "about_me_name":"Name",
+   "about_me_nationality":"Nationality",
+   "about_me_nationality_name":"Haitian",
+   "about_me_experiences":"Experiences",
+   "about_me_freelance":"Freelance",
+   "about_me_disponibilidade":"Available",
+   "about_me_phone":"Phones",
+   "about_me_email":"Email",
+   "about_me_language":"Languages",
+   "about_me_language_en":"English",
+   "about_me_language_fr":"French",
+   "about_me_language_pt":"Portuguese"
+  },
+  "workPage":{
+    "position":"Frontend project",
+    "description":""
+  }
+
   }

@@ -1,5 +1,76 @@
 {
-    "HomePage": {
-      "title": "bueno dia el mundo!"
-    }
+ "navbar": {
+  "home": "Inicio",
+  "resume": "Currículum",
+  "contact": "Contáctame",
+  "works": "Trabajos",
+  "services": "Servicios",
+  "languages": "Idiomas"
+},
+"HomePage": {
+  "profession_1":"Desarrollador de software",
+  "profession_2":"Full stack",
+  "presentation_1":"Hola!, soy",
+  "presentation_2":"Junior Semerzier",
+  "presentation_text":"Un desarrollador de software apasionado y experimentado con más de 6 años de experiencia en la industria tecnológica. Me especializo en desarrollo full-stack, con un profundo conocimiento de tecnologías tanto de front-end como de back-end.",
+  "download_cv":"Descargar CV",
+  "years":"Años",
+  "projects":"Proyectos",
+  "technologes":"Tecnologías",
+  "experiences":"de experiencia",
+  "completed":"completados",
+  "mastering":"dominando"
+},
+"ServicePage": {
+  "service_01_title": "Desarrollo web",
+  "service_02_title": "Sistemas embebidos / IoT",
+  "service_03_title": "Aplicaciones móviles",
+  "service_01": "Soy competente en desarrollo tanto de front-end como de back-end, lo que me permite construir soluciones web integrales de extremo a extremo.",
+  "service_02": "Ofrezco servicios completos de desarrollo de IoT, desde la conexión de sensores y dispositivos a la nube hasta el desarrollo de aplicaciones que permiten el monitoreo, control y análisis de datos en tiempo real.",
+  "service_03": "Ofrezco servicios completos de desarrollo de aplicaciones móviles, desde el concepto y diseño inicial hasta la implementación y el soporte continuo."
+},
+
+"resumePage": {
+  "title": "¿Por qué contratarme?",
+  "Why_hire_me": "Aportaré una combinación de habilidades para resolver problemas y un fuerte compromiso con la entrega de software de alta calidad.",
+  "expereinces_title": "Mis experiencias me han proporcionado una base sólida en desarrollo de software, desde la construcción de aplicaciones escalables hasta el trabajo en entornos colaborativos y ágiles.",
+  "experience": "Experiencias",
+  "experiences_card_1": {
+    "years": "2020 - hasta ahora",
+    "position": "Desarrollador Frontend",
+    "link": "enlace",
+    "instutition_name": "INSTITUT HAITIEN DE STATISTIQUE ET INFORMATIQUE - IHSI",
+    "country": "HAITÍ"
+  },
+  "experiences_card_2": {
+    "years": "2022 - 2023",
+    "position": "Desarrollador web freelance",
+    "link": "enlace",
+    "instutition_name": "ERNSYANS TECHNOLOGY SOLUTIONS Ltd",
+    "country": "CANADÁ"
+  },
+  "education": "Educación",
+  "education_desc": "Tengo un título de Licenciatura en Ciencias de la Computación y siempre estoy dispuesto a aprender nuevas tecnologías y mejorar mi habilidad.",
+  "education_year": "2019",
+  "education_title": "Licenciatura en Ciencias de la Computación",
+  "education_localization": "Brasil",
+  "education_university": "Universidade Federal de Santa Catarina-UFSC",
+  "skills": "Habilidades",
+  "skills_desc": "Tengo una gran competencia en lenguajes de programación como JavaScript, Python y C++, y soy hábil en frameworks como React/nextjs, Django y las siguientes tecnologías.",
+  "about_me": "Sobre mí",
+  "about_me_desc": "Soy conocido por mis habilidades para resolver problemas, atención al detalle y compromiso con la escritura de código limpio y mantenible.",
+  "about_me_name": "Nombre",
+  "about_me_nationality": "Nacionalidad",
+  "about_me_nationality_name": "Haitiana",
+  "about_me_experiences": "Experiencias",
+  "about_me_freelance": "Freelance",
+  "about_me_disponibilidade": "Disponible",
+  "about_me_phone": "Teléfonos",
+  "about_me_email": "Correo electrónico",
+  "about_me_language": "Idiomas",
+  "about_me_language_en": "Inglés",
+  "about_me_language_fr": "Francés",
+  "about_me_language_pt": "Portugués"
+}
+
   }

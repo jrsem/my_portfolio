@@ -9,12 +9,20 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import {carousel_data} from '@/constants'
+import {
+  carousel_data_en,
+  carousel_data_fr,
+  carousel_data_es,
+  carousel_data_pt
+
+} from '@/constants'
+import {useTranslations, useLocale} from 'next-intl' 
 export function CarouselDemo() {
+  const locale=useLocale()
   return (
     <Carousel className="w-full relative mb-8">
       <CarouselContent className="mb-8">
-        {carousel_data.map(({description,image,technologies,title,url_github,url_site,number,index}) => (
+        {(locale==='fr' ? carousel_data_fr : locale==='pt'? carousel_data_pt: locale==='en' ? carousel_data_en : carousel_data_es).map(({description,image,technologies,title,url_github,url_site,number,index}) => (
           <CarouselItem key={index}>
             <div className="grid grid-cols-1 md:grid-cols-2 text-white-1 gap-8 items-center">
                 <div>

@@ -1,10 +1,13 @@
 import React from 'react'
 import Service from './Service'
+import {useTranslations} from 'next-intl' 
 const Services = () => {
+
+  const t=useTranslations('ServicePage');
   return (
     <div className="grid text-white-2 sm:grid-cols-2 gap-8 lg:gap-16">
-        <Service title="Web development" 
-        description=' I’m proficient in both front-end and back-end development, allowing me to build comprehensive, end-to-end web solutions.'
+        <Service title={t("service_01_title")} 
+        description={t("service_01")} 
         number="01"
          url='/web-app'
         />
@@ -13,13 +16,13 @@ const Services = () => {
         number="02"
         url='/ui-ux'
         /> */}
-        <Service title="Embaded system / IoT" 
-        description='I offer complete IoT development services, from connecting sensors and devices to the cloud, to developing applications that allow for real-time data monitoring, control, and analytics.'
+        <Service title={t("service_02_title")} 
+        description={t("service_02")} 
         number="02"
          url='/iot'
         />
-        <Service title="Mobile App" 
-        description=' I offer comprehensive mobile app development services, from initial concept and design to deployment and ongoing support.'
+        <Service title={t("service_03_title")} 
+        description={t("service_03")}
         number="03"
          url='/mobile-app'
         />

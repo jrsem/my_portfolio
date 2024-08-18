@@ -3,22 +3,25 @@ import Button from './Button'
 import Image from 'next/image'
 import junior from '@/public/junior.jpg'
 import AnimatedCounter from './AnimatedCounter';
+import {useTranslations} from 'next-intl' 
 const About = () => {
+
+    const t=useTranslations('HomePage');
   return (
     <div className="">
     <div className="text-white-1 grid md:grid-cols-2 gap-4">
         <div className="flex justify-center flex-col">
-            <p className="text-white-2">Software developer | Full stack</p>
-            <h1 className="text-4xl">Hello I&apos;m</h1>
-            <h1 className="text-secondColor text-4xl mb-4">Junior Semerzier</h1>
-            <p className="mb-6 text-justify text-12">A passionate and experienced software developer with over 6 years of experience in the tech industry. I specialize in full-stack development, with a deep understanding of both front-end and back-end technologies.
-
+            <p className="text-white-2">{t("profession_1")} | {t("profession_2")}</p>
+            <h1 className="text-4xl">{t("presentation_1")}</h1>
+            <h1 className="text-secondColor text-4xl mb-4">{t("presentation_2")}</h1>
+            <p className="mb-6 text-justify text-12">
+            {t("presentation_text")}
             </p>
         
            <div className="grid gap-6 sm:grid-cols-2 sm:my-6 md:grid-cols-1 lg:grid-cols-2">
                 <Button
                     type='button'
-                    title="Download cv"
+                    title={t("download_cv")}
                     variant='md:px-3md:py-1 text-secondColor p-2 sm:py-0 md:py-3 hover:bg-white-1'
                     icon='/download.svg'
                     />
@@ -68,9 +71,9 @@ const About = () => {
     </div>
 {/* second row */}
     <div className="grid grid-cols-2 xs:grid-cols-3 mt-16 gap-4 justify-center items-center">
-                <AnimatedCounter amount={6} desc_1='Years' desc_2='of experiences'/>
-                <AnimatedCounter amount={50} desc_1='Projects' desc_2='completed'/>
-                <AnimatedCounter amount={5} desc_1='Technologies' desc_2='mastering'/>
+                <AnimatedCounter amount={6} desc_1={t("years")} desc_2={t("experiences")}/>
+                <AnimatedCounter amount={17} desc_1={t("projects")} desc_2={t("completed")}/>
+                <AnimatedCounter amount={3} desc_1={t("technologes")} desc_2={t("mastering")}/>
     </div>
     </div>
   )
