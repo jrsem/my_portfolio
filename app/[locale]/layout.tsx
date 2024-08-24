@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar'
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 import { notFound } from "next/navigation";
-
+import { Toaster } from "@/components/ui/sonner"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -36,6 +36,7 @@ export default async function RootLayout({
         <main className="relative overflow-hidden min-h-full flex items-center justify-center pb-2">
           {children}
         </main>
+        <Toaster />
       </NextIntlClientProvider>
         </body>
     </html>

@@ -58,7 +58,7 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
   switch (props.fieldType) {
     // Case type of the field is an input, render this.
       case FormFieldType.INPUT:
-      return (
+      return (<>
         <div className="flex rounded-md border border-dark-500 bg-dark-400">
           {props.iconSrc && (
             <Image
@@ -69,6 +69,7 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
               className="ml-2"
             />
           )}
+          
           <FormControl>
             <Input
               placeholder={props.placeholder}
@@ -76,12 +77,14 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
               className="shad-input border-0 mt-0"
             />
           </FormControl>
+         
         </div>
-      );
+         <FormMessage className="zod_error_message" />
+         </>);
 
       case FormFieldType.PHONE_INPUT:
-        return (
-          <FormControl>
+        return (<>
+        <FormControl>
             <PhoneInput
               defaultCountry="HT"
               placeholder={props.placeholder}
@@ -92,11 +95,14 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
               className="input-phone"
             />
           </FormControl>
+          <FormMessage className="zod_error_message" />
+        </>
+          
         );
    
       case FormFieldType.SELECT:
-          return (
-            <FormControl>
+          return (<>
+          <FormControl>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger className="shad-select-trigger data-[placeholder]:text-dark-600">
@@ -108,12 +114,15 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
                 </SelectContent>
               </Select>
             </FormControl>
+           <FormMessage className="zod_error_message" />
+          </>
+            
           );
       
           
       case FormFieldType.TEXTAREA:
-        return (
-          <FormControl>
+        return (<>
+        <FormControl>
             <Textarea
               placeholder={props.placeholder}
               {...field}
@@ -121,6 +130,9 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
               disabled={props.disabled}
             />
           </FormControl>
+          <FormMessage className="zod_error_message" />
+        </>
+          
         );
     
           default:
@@ -142,8 +154,6 @@ const CustomFormField = (props: CustomProps) => {
         )}
         {/* here we make this part of the shadcn form input dynamic, ou seja reusable */}
         <RenderInput field={field} props={props} />
-
-        <FormMessage className="shad-error" />
       </FormItem>
     )}
   />

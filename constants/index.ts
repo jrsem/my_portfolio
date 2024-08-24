@@ -36,7 +36,7 @@ export const carousel_data_en=[
       title:'Frontend project',
       description:'The Electronic Entry and Exit Form (e-FES) is a system that facilitates the formalities of travelers with the migration, health and customs services of the Republic of Haiti.',
       technologies:'Nextjs / tailwindcss / shadcn / zustand / zod',
-      image:'/works/efes.PNG',
+      image:'/works/efes.webp',
       url_site:'https://efes-demo.ayiti.digital/fr',
       url_github:'https://github.com/jrsem',
     },
@@ -46,8 +46,18 @@ export const carousel_data_en=[
       title:'Full-stack project',
       description:'This app is a Patient Management System that streamlines patient registration, appointment scheduling.',
       technologies:'Nextjs / tailwindcss / shadcn / zustand / zod / appwrite',
-      image:'/works/cmrl.PNG',
+      image:'/works/cmrl.webp',
       url_site:'https://cmrl-rendez-vous-jof1.vercel.app/',
+      url_github:'https://github.com/jrsem',
+    },
+    {
+      index:2,
+      number:'03',
+      title:'Back end project',
+      description:'This app is a SASS application for e-commerce front end web site  that can manage several front end.',
+      technologies:'Nextjs / tailwindcss / shadcn / zustand / zod / postgresql / NextAuth-v5',
+      image:'/works/auth.webp',
+      url_site:'',
       url_github:'https://github.com/jrsem',
     }
   ]
@@ -71,6 +81,16 @@ export const carousel_data_fr = [
     image: '/works/cmrl.PNG',
     url_site: 'https://cmrl-rendez-vous-jof1.vercel.app/',
     url_github: 'https://github.com/jrsem'
+  },
+  {
+    index:2,
+    number:'03',
+    title:'Back end project',
+    description:"Cette application est une application SASS pour les sites web front end d'e-commerce qui peut gérer plusieurs front end.",
+    technologies:'Nextjs / tailwindcss / shadcn / zustand / zod / postgresql / NextAuth-v5',
+    image:'/works/auth.webp',
+    url_site:'',
+    url_github:'https://github.com/jrsem',
   }
 ]
 
@@ -79,7 +99,7 @@ export const carousel_data_es = [
     index: 0,
     number: '01',
     title: 'Proyecto Frontend',
-    description: 'El Formulario Electrónico de Entrada y Salida (e-FES) es un sistema que facilita las formalidades de los viajeros con los servicios de migración, salud y aduanas de la República de Haití.',
+    description: 'Esta aplicación es una aplicación SASS para front-end de comercio electrónico que puede gestionar varios front-end de comercio electrónico.',
     technologies: 'Nextjs / tailwindcss / shadcn / zustand / zod',
     image: '/works/efes.PNG',
     url_site: 'https://efes-demo.ayiti.digital/fr',
@@ -94,6 +114,16 @@ export const carousel_data_es = [
     image: '/works/cmrl.PNG',
     url_site: 'https://cmrl-rendez-vous-jof1.vercel.app/',
     url_github: 'https://github.com/jrsem'
+  },
+  {
+    index:2,
+    number:'03',
+    title:'Back end project',
+    description:'Esta aplicación es una aplicación SASS para front-end de comercio electrónico que puede gestionar varios front-end.',
+    technologies:'Nextjs / tailwindcss / shadcn / zustand / zod / postgresql / NextAuth-v5',
+    image:'/works/auth.webp',
+    url_site:'',
+    url_github:'https://github.com/jrsem',
   }
 ]
 
@@ -117,33 +147,48 @@ export const carousel_data_pt = [
     image: '/works/cmrl.PNG',
     url_site: 'https://cmrl-rendez-vous-jof1.vercel.app/',
     url_github: 'https://github.com/jrsem'
+  },
+  {
+    index:2,
+    number:'03',
+    title:'Projeto Back end',
+    description:'Esta aplicação é uma aplicação SASS para sítios Web de front-end de comércio eletrónico que pode gerir vários front-ends de comércio eletrónico.',
+    technologies:'Nextjs / tailwindcss / shadcn / zustand / zod / postgresql / NextAuth-v5',
+    image:'/works/auth.webp',
+    url_site:'',
+    url_github:'https://github.com/jrsem',
   }
 ]
 
   export const services_en=[
     // {id:0, label:'Web design',value:'wd'},
-    {id:1, label:'Embaded system',value:'es'},
-    {id:2, label:'Mobile App',value:'mp'},
-    {id:3, label:'Web development',value:'wde'}
+    {id:1, label:'Embaded system',value:'Embaded system'},
+    {id:2, label:'Mobile App',value:'Mobile App'},
+    {id:3, label:'Web development',value:'Web development'}
   ]
   export const services_fr = [
     // {id: 0, label: 'Conception de sites web', value: 'wd'},
-    {id: 1, label: 'Système embarqué', value: 'es'},
-    {id: 2, label: 'Application mobile', value: 'mp'},
-    {id: 3, label: 'Développement web', value: 'wde'}
+    {id: 1, label: 'Système embarqué', value: 'Embaded system'},
+    {id: 2, label: 'Application mobile', value: 'Mobile App'},
+    {id: 3, label: 'Développement web', value: 'Web development'}
   ]
   
   export const services_es = [
     // {id: 0, label: 'Diseño web', value: 'wd'},
-    {id: 1, label: 'Sistema embebido', value: 'es'},
-    {id: 2, label: 'Aplicación móvil', value: 'mp'},
-    {id: 3, label: 'Desarrollo web', value: 'wde'}
+    {id: 1, label: 'Sistema embebido', value: 'Embaded system'},
+    {id: 2, label: 'Aplicación móvil', value: 'Mobile App'},
+    {id: 3, label: 'Desarrollo web', value: 'Web development'}
   ]
   
   export const services_pt = [
     // {id: 0, label: 'Design web', value: 'wd'},
-    {id: 1, label: 'Sistema embarcado', value: 'es'},
-    {id: 2, label: 'Aplicativo móvel', value: 'mp'},
-    {id: 3, label: 'Desenvolvimento web', value: 'wde'}
+    {id: 1, label: 'Sistema embarcado', value: 'Embaded system'},
+    {id: 2, label: 'Aplicativo móvel', value: 'Mobile App'},
+    {id: 3, label: 'Desenvolvimento web', value: 'Web development'}
   ]
+  
+  export const email_en="Your email has been send, Thank you for contact us!"
+  export const email_fr="Votre email a été envoyé, merci de nous avoir contacté !"
+  export const email_pt="Seu e-mail foi enviado. Obrigado por entrar em contato conosco!"
+  export const email_es="Su correo electrónico ha sido enviado. ¡Gracias por ponerse en contacto con nosotros!"
   

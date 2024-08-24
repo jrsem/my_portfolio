@@ -11,18 +11,27 @@ import {Mail,Phone,MapPinCheckInside} from 'lucide-react'
 import {
   Form,
 } from "@/components/ui/form"
+import { toast } from "sonner"
+
 import {useTranslations, useLocale} from 'next-intl' 
 import {
   services_fr,
   services_es,
   services_en,
   services_pt,
+
+  email_en,
+  email_fr,
+  email_es,
+  email_pt
 } from '@/constants'
 import {
     SelectItem,
   } from "@/components/ui/select"
 import { Input } from "@/components/ui/input"
- 
+import {sendEmail} from '@/actions'
+import { useTransition } from "react";
+
 const formSchema = z.object({
   firstname: z.string().min(2, {
     message: "Username must be at least 2 characters.",
@@ -36,17 +45,19 @@ const formSchema = z.object({
   service: z.string().min(2, {
     message: "Username must be at least 2 characters.",
   }),
-  phone_number:z.string()
+  phone:z.string()
   .refine((phone) => /^\+\d{10,15}$/.test(phone), "Invalid phone number"),
-  message:z.string().min(2, {
+  content:z.string().min(2, {
     message: "Username must be at least 2 characters.",
   }),
 })
 
 const Contact_form = () => {
+  const [isPending, startTransition] = useTransition();
+
   const t=useTranslations('contactPage');
   const locale=useLocale()
-    const [isLoading, setIsLoading] = useState(false);
+    // const [isLoading, setIsLoading] = useState(false);
       // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -54,17 +65,31 @@ const Contact_form = () => {
       firstname: "",
       lastname: "",
       email:"",
-      phone_number:"",
-      service:"",
-      message:""
+      phone:"",
+      service:undefined,
+      content:""
     },
   })
  
+
   // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
+ function onSubmit(values: z.infer<typeof formSchema>) {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
-    console.log(values)
+    const {email,service,lastname,firstname, phone,content}=values
+    startTransition(async () => {
+     const response=   await sendEmail(content,email,phone,service,firstname,lastname)
+        form.reset() 
+        toast(
+         "",
+          {
+            className:"bg-[#d5f5e3]",
+            description:  locale==='fr' ? email_fr : locale==='pt'? email_pt: locale==='en' ? email_en : email_es
+          }
+        )
+        console.log(response)
+    })
+   console.log(values)
   }
 
   return (
@@ -106,7 +131,7 @@ const Contact_form = () => {
               <CustomFormField
                 fieldType={FormFieldType.PHONE_INPUT}
                 control={form.control}
-                name="phone_number"
+                name="phone"
                 label={t("phone_number")}
                 placeholder="(555) 123-4567"
               />
@@ -132,12 +157,12 @@ const Contact_form = () => {
         <CustomFormField
               fieldType={FormFieldType.TEXTAREA}
               control={form.control}
-              name="message"
+              name="content"
               label={t("message")}
               placeholder={t("massage_placeholder")}
             />
         </div>
-        <SubmitButton isLoading={isLoading}>{t("btn")}</SubmitButton>
+        <SubmitButton isLoading={isPending}>{t("btn")}</SubmitButton>
     </form>
   </Form>
   )

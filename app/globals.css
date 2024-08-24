@@ -187,8 +187,6 @@ html {
     @apply col-span-3;
   }
 
-
-  
   .grid-x-1-2 {
     /*container (here we have 3 cells)*/
     @apply grid grid-cols-3;
@@ -269,6 +267,10 @@ html {
 
   .shad-combobox-item {
     @apply data-[disabled=true]:pointer-events-none data-[disabled=true]:opacity-50 !important;
+  }
+
+  .zod_error_message {
+    @apply text-[#e74c3c] text-[10px] !important;
   }
 }
 /* =====  REACT PHONE NUMBER INPUT OVERRIDES */
