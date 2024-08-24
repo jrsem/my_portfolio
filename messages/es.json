@@ -71,6 +71,21 @@
   "about_me_language_en": "Inglés",
   "about_me_language_fr": "Francés",
   "about_me_language_pt": "Portugués"
+},
+"contactPage": {
+  "lastname": "Apellido",
+  "firstname": "Nombre",
+  "form_title": "Trabajemos juntos",
+  "phone_number": "Número de teléfono",
+  "choose_service": "Elegir servicio",
+  "select_service_placeholder": "Seleccionar un servicio",
+  "message": "Mensaje",
+  "massage_placeholder": "Escribe tu mensaje aquí ...",
+  "btn": "Enviar mensaje",
+  "address": "Dirección",
+  "email": "Correo electrónico",
+  "phone": "Teléfono"
 }
+
 
   }

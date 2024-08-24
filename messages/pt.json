@@ -70,6 +70,20 @@
   "about_me_language_en": "Inglês",
   "about_me_language_fr": "Francês",
   "about_me_language_pt": "Português"
+},
+"contactPage": {
+  "lastname": "Sobrenome",
+  "firstname": "Nome",
+  "form_title": "Vamos trabalhar juntos",
+  "phone_number": "Número de telefone",
+  "choose_service": "Escolher serviço",
+  "select_service_placeholder": "Selecionar um serviço",
+  "message": "Mensagem",
+  "massage_placeholder": "Digite sua mensagem aqui ...",
+  "btn": "Enviar mensagem",
+  "address": "Endereço",
+  "email": "Email",
+  "phone": "Telefone"
 }
 
   }

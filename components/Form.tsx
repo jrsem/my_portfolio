@@ -7,10 +7,17 @@ import { z } from "zod"
 import CustomFormField , {FormFieldType} from "./CustomFormField";
 import { Button } from "@/components/ui/button"
 import SubmitButton from '@/components/SubmitButton'
+import {Mail,Phone,MapPinCheckInside} from 'lucide-react'
 import {
   Form,
 } from "@/components/ui/form"
-import {services} from '@/constants'
+import {useTranslations, useLocale} from 'next-intl' 
+import {
+  services_fr,
+  services_es,
+  services_en,
+  services_pt,
+} from '@/constants'
 import {
     SelectItem,
   } from "@/components/ui/select"
@@ -37,6 +44,8 @@ const formSchema = z.object({
 })
 
 const Contact_form = () => {
+  const t=useTranslations('contactPage');
+  const locale=useLocale()
     const [isLoading, setIsLoading] = useState(false);
       // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
@@ -67,7 +76,7 @@ const Contact_form = () => {
                 fieldType={FormFieldType.INPUT}
                 control={form.control}
                 name="firstname"
-                label="First name"
+                label={t("firstname")}
                 placeholder="John Doe"
                 iconSrc="/assets/icons/user.svg"
                 iconAlt="user"
@@ -76,7 +85,7 @@ const Contact_form = () => {
                 fieldType={FormFieldType.INPUT}
                 control={form.control}
                 name="lastname"
-                label="Last name"
+                label={t("lastname")}
                 placeholder="John Doe"
                 iconSrc="/assets/icons/user.svg"
                 iconAlt="user"
@@ -87,7 +96,7 @@ const Contact_form = () => {
                 fieldType={FormFieldType.INPUT}
                 control={form.control}
                 name="email"
-                label="Email"
+                label={t("email")}
                 placeholder="johndoe@gmail.com"
                 iconSrc="/assets/icons/email.svg"
                 iconAlt="email"
@@ -98,7 +107,7 @@ const Contact_form = () => {
                 fieldType={FormFieldType.PHONE_INPUT}
                 control={form.control}
                 name="phone_number"
-                label="Phone number"
+                label={t("phone_number")}
                 placeholder="(555) 123-4567"
               />
         </div>
@@ -107,10 +116,10 @@ const Contact_form = () => {
             fieldType={FormFieldType.SELECT}
             control={form.control}
             name="service"
-            label="Choose service"
-            placeholder="Select a service"
+            label={t("choose_service")}
+            placeholder={t("select_service_placeholder")}
           >
-            {services.map((service, i) => (
+            {(locale==='fr' ? services_fr : locale==='pt'? services_pt: locale==='en' ? services_en : services_es).map((service, i) => (
               <SelectItem key={service.label + i} value={service.value}>
                 <div className="flex cursor-pointer items-center gap-2 text-white-1">
                   <p>{service.label}</p>
@@ -124,11 +133,11 @@ const Contact_form = () => {
               fieldType={FormFieldType.TEXTAREA}
               control={form.control}
               name="message"
-              label="Message"
-              placeholder="write here your message..."
+              label={t("message")}
+              placeholder={t("massage_placeholder")}
             />
         </div>
-        <SubmitButton isLoading={isLoading}>Send message</SubmitButton>
+        <SubmitButton isLoading={isLoading}>{t("btn")}</SubmitButton>
     </form>
   </Form>
   )

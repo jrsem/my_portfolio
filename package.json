@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "lint":"next lint"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -21,6 +20,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.1.8",
+    "framer-motion": "^11.3.28",
     "lucide-react": "^0.427.0",
     "next": "14.2.5",
     "next-intl": "^3.17.2",
@@ -29,6 +29,7 @@
     "react-dom": "^18",
     "react-hook-form": "^7.52.2",
     "react-phone-number-input": "^3.4.5",
+    "styled-components": "^6.1.12",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.23.8"

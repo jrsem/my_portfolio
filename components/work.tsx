@@ -1,3 +1,4 @@
+"use client"
 import * as React from "react"
 import Image from 'next/image'
 import Link from 'next/link'
@@ -17,6 +18,7 @@ import {
 
 } from '@/constants'
 import {useTranslations, useLocale} from 'next-intl' 
+import { motion } from "framer-motion"
 export function CarouselDemo() {
   const locale=useLocale()
   return (
@@ -25,7 +27,11 @@ export function CarouselDemo() {
         {(locale==='fr' ? carousel_data_fr : locale==='pt'? carousel_data_pt: locale==='en' ? carousel_data_en : carousel_data_es).map(({description,image,technologies,title,url_github,url_site,number,index}) => (
           <CarouselItem key={index}>
             <div className="grid grid-cols-1 md:grid-cols-2 text-white-1 gap-8 items-center">
-                <div>
+                <motion.div
+                initial={{opacity:0, x:-100}}
+                whileInView={{opacity:1, x:0}} 
+                transition={{duration:1.5}}
+                >
                     <div className="flex flex-col gap-1 border-b border-white-3 pb-1">
                         <h1 className="text-4 text-bold">{number}</h1>
                         <h1 className="text-16">{title}</h1>
@@ -42,13 +48,19 @@ export function CarouselDemo() {
                         </Link>
                         {/* <GitGraph className='text-secondColor cursor-pointer'/> */}
                     </div>
-                </div>
+                </motion.div>
                 
-                <div className="p-1">
+                <motion.div 
+                 initial={{opacity:0, x:100}}
+                 whileInView={{opacity:1, x:0}} 
+                 transition={{duration:2}}
+                className="p-1">
                     <Image src={image} width={400} height={400} 
                     alt='efes'
+                    placeholder='blur'
+                    blurDataURL={image}
                     />
-                </div>
+                </motion.div>
             </div>
             
           </CarouselItem>

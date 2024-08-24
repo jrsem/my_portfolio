@@ -12,7 +12,7 @@ import Skill from '@/components/Skill'
 import Education from './Education'
 import Experience from './Experience'
 import {useTranslations} from 'next-intl'
-
+import { motion } from "framer-motion"
 export function Resume() {
 
   const t=useTranslations('resumePage');
@@ -24,7 +24,11 @@ export function Resume() {
 
   return (
     <Tabs value={tab} onValueChange={onTabChange} defaultValue="experiences" className="md:gap-4 w-full lg:w-[900px] h-auto text-white-1 grid lg:grid-x-1-2">
-      <div className="span-x-2 lg:span-x-1">
+      <motion.div 
+      initial={{opacity:0, x:-100}}
+      whileInView={{opacity:1, x:0}} 
+      transition={{duration:1.5}}
+      className="span-x-2 lg:span-x-1">
       <TabsList className="flex gap-4 flex-col w-full h-auto justify-start">
         <h1 className="text-16">{t("title")}</h1>
         <p className="w-full lg:max-w-[250px] text-12 text-white-2">{t("Why_hire_me")} </p>
@@ -33,10 +37,14 @@ export function Resume() {
         <TabsTrigger value="skills" className={cn("bg-black-2 w-full lg:w-[250px] p-0 hover:bg-secondColor py-2",{"bg-secondColor":tab==='skills'})}>{t("skills")}</TabsTrigger>
         <TabsTrigger value="about_me" className={cn("bg-black-2 w-full lg:w-[250px] p-0 hover:bg-secondColor py-2",{"bg-secondColor":tab==='about_me'})}>{t("about_me")}</TabsTrigger>
       </TabsList>
-      </div>
+      </motion.div>
       
         
-      <div className="span-x-2">
+      <motion.div 
+       initial={{opacity:0, x:100}}
+       whileInView={{opacity:1, x:0}} 
+       transition={{duration:2}}
+      className="span-x-2">
             <TabsContent value="experiences" className="pt-10">
             <h1 className="text-16">{t("experience")}</h1>
                 <p className="text-12 text-white-2"> {t("expereinces_title")}
@@ -112,7 +120,7 @@ export function Resume() {
                     <p>{t("about_me_name")}: <span className="text-white-2">Junior Semerzier</span></p>   
                     <p>{t("about_me_experiences")}: <span className="text-white-2">6+</span></p> 
                     <p>{t("about_me_nationality")}: <span className="text-white-2">{t("about_me_nationality_name")}</span></p> 
-                    <p>{t("about_me_freelance")}: <span className="text-white-2">{t("about_me_disponibilidade")}</span></p> 
+                    <p>{t("about_me_freelance")}: <span className="font-bold text-[#1b8e4b]">{t("about_me_disponibilidade")}</span></p> 
                     </div>
 
                     <div className="flex flex-col gap-2">
@@ -123,7 +131,7 @@ export function Resume() {
 
                 </div>
             </TabsContent>
-      </div>  
+      </motion.div>  
     </Tabs>
   )
 }

@@ -1,4 +1,5 @@
 // NAVIGATION
+const efes =require("/public/works/efes.PNG")
 export const NAV_LINKS_fr = [
     { href: '/', key: 'home', label: 'Accueil' },
     { href: '/services', key: 'services', label: 'Services' },
@@ -119,9 +120,30 @@ export const carousel_data_pt = [
   }
 ]
 
-  export const services=[
-    {id:0, label:'Web design',value:'wd'},
+  export const services_en=[
+    // {id:0, label:'Web design',value:'wd'},
     {id:1, label:'Embaded system',value:'es'},
     {id:2, label:'Mobile App',value:'mp'},
     {id:3, label:'Web development',value:'wde'}
   ]
+  export const services_fr = [
+    // {id: 0, label: 'Conception de sites web', value: 'wd'},
+    {id: 1, label: 'Système embarqué', value: 'es'},
+    {id: 2, label: 'Application mobile', value: 'mp'},
+    {id: 3, label: 'Développement web', value: 'wde'}
+  ]
+  
+  export const services_es = [
+    // {id: 0, label: 'Diseño web', value: 'wd'},
+    {id: 1, label: 'Sistema embebido', value: 'es'},
+    {id: 2, label: 'Aplicación móvil', value: 'mp'},
+    {id: 3, label: 'Desarrollo web', value: 'wde'}
+  ]
+  
+  export const services_pt = [
+    // {id: 0, label: 'Design web', value: 'wd'},
+    {id: 1, label: 'Sistema embarcado', value: 'es'},
+    {id: 2, label: 'Aplicativo móvel', value: 'mp'},
+    {id: 3, label: 'Desenvolvimento web', value: 'wde'}
+  ]
+  

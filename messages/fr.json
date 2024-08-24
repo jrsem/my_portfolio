@@ -70,6 +70,21 @@
   "about_me_language_en": "Anglais",
   "about_me_language_fr": "Français",
   "about_me_language_pt": "Portugais"
+},
+"contactPage": {
+  "lastname": "Nom de famille",
+  "firstname": "Prénom",
+  "form_title": "Travaillons ensemble",
+  "phone_number": "Numéro de téléphone",
+  "choose_service": "Choisir un service",
+  "select_service_placeholder": "Sélectionner un service",
+  "message": "Message",
+  "massage_placeholder": "Tapez votre message ici ...",
+  "btn": "Envoyer le message",
+  "address": "Adresse",
+  "email": "Email",
+  "phone": "Téléphone"
 }
+
 
   }

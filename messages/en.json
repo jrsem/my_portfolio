@@ -78,6 +78,19 @@
   "workPage":{
     "position":"Frontend project",
     "description":""
-  }
-
+  },
+"contactPage":{
+  "lastname":"Last name",
+  "firstname":"First name",
+  "form_title":"Let's work together",
+  "phone_number":"Phone number",
+  "choose_service":"Choose service",
+  "select_service_placeholder":"Select aservice",
+  "message":"Message",
+  "massage_placeholder":"Type your message here ...",
+  "btn":"Send message",
+  "address":"Address",
+  "email":"Email",
+  "phone":"Phone"
+}
   }
